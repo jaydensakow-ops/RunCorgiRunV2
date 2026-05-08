@@ -28,7 +28,7 @@ public class TimedObjectPlacer : MonoBehaviour
         isOkToCreate = true;
     }
 
-    private void Place()
+    protected virtual void Place()
     {
         Instantiate(Prefab, SpawnTools.RandomLocationWorldSpace(), Quaternion.identity);
     }
