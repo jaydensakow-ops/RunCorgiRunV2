@@ -5,6 +5,7 @@ public class Corgi : MonoBehaviour
 {
     public Sprite NormalSprite;
     public Sprite DrunkSprite;
+    public UI Ui;
     
     private SpriteRenderer corgieSpriteRenderer;
     private bool isDrunk = false;
@@ -110,6 +111,7 @@ public class Corgi : MonoBehaviour
     private void AddPointToScore()
     {
         ScoreKeeper.AddPoint();
+        Ui.ShowScore();
     }
 
     public void OnCollisionEnter2D(Collision2D other)
