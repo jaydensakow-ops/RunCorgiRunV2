@@ -7,4 +7,5 @@ public class PillPlacer : TimedObjectPlacer
         minimumSecondsToWait = GameParameters.PillMinimumSecondsToWait;
         maximumSecondsToWait = GameParameters.PillMaximumSecondsToWait;
     }
+    
 }
