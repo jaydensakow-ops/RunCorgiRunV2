@@ -13,6 +13,11 @@ public class UI : MonoBehaviour
     {
         ScoreText.text = "Score: " + ScoreKeeper.GetScore();
     }
+    
+    public void ResetScore()
+    {
+        ScoreText.text = "Score: 0";
+    }
 
     public void ShowTime()
     {

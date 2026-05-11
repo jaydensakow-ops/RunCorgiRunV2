@@ -6,6 +6,7 @@ public class Corgi : MonoBehaviour
     public Sprite NormalSprite;
     public Sprite DrunkSprite;
     public UI Ui;
+    public Game Game;
     
     private SpriteRenderer corgieSpriteRenderer;
     private bool isDrunk = false;
@@ -25,6 +26,15 @@ public class Corgi : MonoBehaviour
         {
             MoveRandomly();
         }
+    }
+
+    public void Reset()
+    {
+        isPlastered = false;
+        isDrunk = false;
+        ChangeToNormalSprite();
+        corgieSpriteRenderer.flipX = false;
+        transform.position = new Vector3(0, 0, 0);
     }
 
     private void MoveRandomly()
@@ -60,6 +70,9 @@ public class Corgi : MonoBehaviour
 
     public void MoveManually(Vector2 direction)
     {
+        if (!Game.IsPlaying())
+            return;
+        
         if (isPlastered)
             return;
         Move(direction);
