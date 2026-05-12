@@ -606,10 +606,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: BubbleParticles
       objectReference: {fileID: 0}
-    - target: {fileID: 651258043522327234, guid: 6b3c1bdfca4dd40bc88ba0198c3cee89, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3271730993336144854, guid: 6b3c1bdfca4dd40bc88ba0198c3cee89, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -649,14 +645,6 @@ PrefabInstance:
     - target: {fileID: 3271730993336144854, guid: 6b3c1bdfca4dd40bc88ba0198c3cee89, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5656333620789554122, guid: 6b3c1bdfca4dd40bc88ba0198c3cee89, type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5656333620789554122, guid: 6b3c1bdfca4dd40bc88ba0198c3cee89, type: 3}
-      propertyPath: moveWithTransform
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
